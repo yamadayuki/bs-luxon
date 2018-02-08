@@ -1,0 +1,3 @@
+module Luxon = {
+  type t;
+};
