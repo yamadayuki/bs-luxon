@@ -1,5 +1,5 @@
 {
-  "name": "bs-luxon",
+  "name": "@yamadayuki/bs-luxon",
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
