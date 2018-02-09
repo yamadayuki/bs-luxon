@@ -1,3 +1,1 @@
-module Luxon = {
-  type t;
-};
+module DateTime = Luxon_datetime;
