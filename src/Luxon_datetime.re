@@ -226,8 +226,10 @@ external hasSame :
 
 [@bs.send] external inspect : t => string = "";
 
-/* TODO: minus */
-/* TODO: plus */
+[@bs.send.pipe : t] external minus : Luxon_duration.t => t = "";
+
+[@bs.send.pipe : t] external plus : Luxon_duration.t => t = "";
+
 /* TODO: reconfigure */
 /* TODO: resolvedLocaleOpts */
 /* TODO: [@bs.send.pipe : t] external set : dt => t = ""; */
