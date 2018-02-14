@@ -1,18 +1,17 @@
-# Basic Reason Template
+# bs-luxon
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+luxon bindings for [BuckleScript](https://github.com/bloomberg/bucklescript) in [Reason](https://github.com/facebook/reason).
 
-# Build
-```
-npm run build
-```
+# Installation
 
-# Build + Watch
+1. install bs-luxon
 
-```
-npm run watch
+```sh
+$ npm install --save bs-luxon
 ```
 
+2. Add `bs-luxon` to `bs-dependencies` section of `bsconfig.json`.
 
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+# Usage
+
+TBD.
