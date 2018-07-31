@@ -9,7 +9,7 @@ type dt = {
   "hours": int,
   "minutes": int,
   "seconds": int,
-  "milliseconds": int
+  "milliseconds": int,
 };
 
 /*
@@ -62,7 +62,7 @@ external invalid : string => t = "";
 /*
  * Public methods
  */
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external as_ :
   (
   [@bs.string]
@@ -71,9 +71,9 @@ external as_ :
   int =
   "as";
 
-[@bs.send.pipe : t] external equals : t => bool = "";
+[@bs.send.pipe: t] external equals : t => bool = "";
 
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external get :
   (
   [@bs.string]
@@ -84,19 +84,19 @@ external get :
 
 [@bs.send] external inspect : t => string = "";
 
-[@bs.send.pipe : t] external minus : t => t = "";
+[@bs.send.pipe: t] external minus : t => t = "";
 
 [@bs.send] external negate : unit => t = "";
 
 [@bs.send] external normalize : unit => t = "";
 
-[@bs.send.pipe : t] external plus : t => t = "";
+[@bs.send.pipe: t] external plus : t => t = "";
 
 /* TODO: reconfigure */
 /* TODO: set */
 /* TODO: shiftTo */
 /* TODO: option */
-[@bs.send.pipe : t] external toFormat : string => string = "";
+[@bs.send.pipe: t] external toFormat : string => string = "";
 
 [@bs.send] external toISO : t => string = "";
 

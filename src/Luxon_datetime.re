@@ -18,7 +18,7 @@ type dt = {
   "hour": int,
   "minute": int,
   "second": int,
-  "millisecond": int
+  "millisecond": int,
 };
 
 /*
@@ -193,7 +193,7 @@ external utcYMDHMSM : (int, int, int, int, int, int, int) => t = "utc";
  */
 /* TODO: diff */
 /* TODO: diffNow */
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external endOf :
   (
   [@bs.string]
@@ -202,42 +202,56 @@ external endOf :
   t =
   "";
 
-[@bs.send.pipe : t] external equals : t => bool = "";
+[@bs.send.pipe: t] external equals : t => bool = "";
 
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external get :
   (
     t,
-    [@bs.string]
-    [ | `year | `month | `day | `hour | `minute | `second | `millisecond]
+    [@bs.string] [
+      | `year
+      | `month
+      | `day
+      | `hour
+      | `minute
+      | `second
+      | `millisecond
+    ]
   ) =>
   int =
   "";
 
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external hasSame :
   (
     t,
-    [@bs.string]
-    [ | `year | `month | `day | `hour | `minute | `second | `millisecond]
+    [@bs.string] [
+      | `year
+      | `month
+      | `day
+      | `hour
+      | `minute
+      | `second
+      | `millisecond
+    ]
   ) =>
   bool =
   "";
 
 [@bs.send] external inspect : t => string = "";
 
-[@bs.send.pipe : t] external minus : Luxon_duration.t => t = "";
+[@bs.send.pipe: t] external minus : Luxon_duration.t => t = "";
 
-[@bs.send.pipe : t] external plus : Luxon_duration.t => t = "";
+[@bs.send.pipe: t] external plus : Luxon_duration.t => t = "";
 
 /* TODO: reconfigure */
 /* TODO: resolvedLocaleOpts */
 /* TODO: [@bs.send.pipe : t] external set : dt => t = ""; */
-[@bs.send.pipe : t] external setLocale : string => t = "";
+[@bs.send.pipe: t] external setLocale : string => t = "";
 
-[@bs.send.pipe : t] external setZone : string => t = "";
+[@bs.send.pipe: t] external setZone : string => t = "";
 
-[@bs.send.pipe : t]
+[@bs.send.pipe: t]
 external startOf :
   (
   [@bs.string]

@@ -10,14 +10,16 @@
     "test:watch": "jest --watch",
     "pretest": "npm run build"
   },
-  "keywords": ["BuckleScript"],
+  "keywords": [
+    "BuckleScript"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.1",
-    "bs-platform": "^2.1.0"
+    "@glennsl/bs-jest": "^0.4.2",
+    "bs-platform": "^4.0.0"
   },
   "dependencies": {
-    "luxon": "^0.4.0"
+    "luxon": "^1.0.0"
   }
 }
