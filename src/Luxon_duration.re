@@ -17,53 +17,51 @@ type dt = {
  */
 /* TODO: option */
 /* fromISO */
-[@bs.module "luxon"] [@bs.scope "Duration"]
-external fromISO : string => t = "";
+[@bs.module "luxon"] [@bs.scope "Duration"] external fromISO: string => t = "";
 
 /* TODO: option */
 /* fromMills */
-[@bs.module "luxon"] [@bs.scope "Duration"] external fromMills : int => t = "";
+[@bs.module "luxon"] [@bs.scope "Duration"] external fromMills: int => t = "";
 
 /* fromObject */
 [@bs.module "luxon"] [@bs.scope "Duration"]
-external fromObject : Js.t('a) => t = "";
+external fromObject: Js.t('a) => t = "";
 
 /* invalid */
-[@bs.module "luxon"] [@bs.scope "Duration"]
-external invalid : string => t = "";
+[@bs.module "luxon"] [@bs.scope "Duration"] external invalid: string => t = "";
 
 /*
  * Public members
  */
-[@bs.get] external days : t => int = "";
+[@bs.get] external days: t => int = "";
 
-[@bs.get] external hours : t => int = "";
+[@bs.get] external hours: t => int = "";
 
-[@bs.get] external invalidReason : t => string = "";
+[@bs.get] external invalidReason: t => string = "";
 
-[@bs.get] external isValid : t => bool = "";
+[@bs.get] external isValid: t => bool = "";
 
-[@bs.get] external locale : t => string = "";
+[@bs.get] external locale: t => string = "";
 
-[@bs.get] external milliseconds : t => int = "";
+[@bs.get] external milliseconds: t => int = "";
 
-[@bs.get] external minutes : t => int = "";
+[@bs.get] external minutes: t => int = "";
 
-[@bs.get] external months : t => int = "";
+[@bs.get] external months: t => int = "";
 
-[@bs.get] external numberingSystem : t => string = "";
+[@bs.get] external numberingSystem: t => string = "";
 
-[@bs.get] external seconds : t => int = "";
+[@bs.get] external seconds: t => int = "";
 
-[@bs.get] external weeks : t => int = "";
+[@bs.get] external weeks: t => int = "";
 
-[@bs.get] external years : t => int = "";
+[@bs.get] external years: t => int = "";
 
 /*
  * Public methods
  */
 [@bs.send.pipe: t]
-external as_ :
+external as_:
   (
   [@bs.string]
   [ | `years | `months | `days | `hours | `minutes | `seconds | `milliseconds]
@@ -71,10 +69,10 @@ external as_ :
   int =
   "as";
 
-[@bs.send.pipe: t] external equals : t => bool = "";
+[@bs.send.pipe: t] external equals: t => bool = "";
 
 [@bs.send.pipe: t]
-external get :
+external get:
   (
   [@bs.string]
   [ | `years | `months | `days | `hours | `minutes | `seconds | `milliseconds]
@@ -82,27 +80,27 @@ external get :
   int =
   "";
 
-[@bs.send] external inspect : t => string = "";
+[@bs.send] external inspect: t => string = "";
 
-[@bs.send.pipe: t] external minus : t => t = "";
+[@bs.send.pipe: t] external minus: t => t = "";
 
-[@bs.send] external negate : unit => t = "";
+[@bs.send] external negate: unit => t = "";
 
-[@bs.send] external normalize : unit => t = "";
+[@bs.send] external normalize: unit => t = "";
 
-[@bs.send.pipe: t] external plus : t => t = "";
+[@bs.send.pipe: t] external plus: t => t = "";
 
 /* TODO: reconfigure */
 /* TODO: set */
 /* TODO: shiftTo */
 /* TODO: option */
-[@bs.send.pipe: t] external toFormat : string => string = "";
+[@bs.send.pipe: t] external toFormat: string => string = "";
 
-[@bs.send] external toISO : t => string = "";
+[@bs.send] external toISO: t => string = "";
 
-[@bs.send] external toJSON : t => string = "";
+[@bs.send] external toJSON: t => string = "";
 
 /* TODO: option */
-[@bs.send] external toObject : t => dt = "";
+[@bs.send] external toObject: t => dt = "";
 
-[@bs.send] external toString : t => string = "";
+[@bs.send] external toString: t => string = "";
