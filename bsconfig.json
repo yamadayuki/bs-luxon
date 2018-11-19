@@ -1,6 +1,6 @@
 {
   "name": "bs-luxon",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "sources": [
     {
       "dir": "src",
@@ -18,6 +18,6 @@
   },
   "suffix": ".bs.js",
   "bs-dev-dependencies": ["@glennsl/bs-jest"],
-  "namespace": true,
+  "namespace": false,
   "refmt": 3
 }
