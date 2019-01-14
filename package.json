@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.6",
-    "bs-platform": "^4.0.17"
+    "bs-platform": "^4.0.18"
   },
   "keywords": [
     "BuckleScript"
