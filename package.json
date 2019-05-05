@@ -2,7 +2,7 @@
   "name": "@yamadayuki/bs-luxon",
   "version": "0.1.0",
   "dependencies": {
-    "luxon": "^1.12.1"
+    "luxon": "^1.13.0"
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.8",
