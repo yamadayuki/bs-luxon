@@ -5,7 +5,7 @@
     "luxon": "^1.15.0"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
+    "@glennsl/bs-jest": "^0.4.9",
     "bs-platform": "^5.0.4"
   },
   "keywords": [
